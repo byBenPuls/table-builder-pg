@@ -1,6 +1,13 @@
 # Postgresql Table Builder
  
+### Installation and updating
+
+`py -m pip install --upgrade pg_table_builder`
+
+
+
 ### ⚙️ Features
+
 
 You can get SQL query string for creating table
 

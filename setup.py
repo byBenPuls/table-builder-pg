@@ -2,19 +2,18 @@ from setuptools import setup, find_packages
 
 
 def readme():
-  with open('README.md', 'r') as f:
-    return f.read()
+    return 'https://github.com/byBenPuls/table-builder-pg/'
 
 
 setup(
   name='pg_table_builder',
-  version='1.0.3',
+  version='1.0.4',
   author='Ben Puls',
   author_email='discordben7@gmail.com',
   description='Table builder for postgresql',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='https://github.com/byBenPuls/table_builder_pg',
+  url='https://github.com/byBenPuls/table-builder-pg',
   packages=find_packages(),
   install_requires=[],
   classifiers=[
@@ -24,7 +23,7 @@ setup(
   ],
   keywords='postgresql',
   project_urls={
-    'GitHub': 'https://github.com/byBenPuls/table_builder_pg'
+    'GitHub': 'https://github.com/byBenPuls/table-builder-pg'
   },
   python_requires='>=3.9'
 )
