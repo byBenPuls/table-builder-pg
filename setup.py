@@ -14,7 +14,7 @@ setup(
   description='Table builder for postgresql',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='https://github.com/byBenPuls/pg_table_builder',
+  url='https://github.com/byBenPuls/table_builder_pg',
   packages=find_packages(),
   install_requires=[],
   classifiers=[
@@ -24,7 +24,7 @@ setup(
   ],
   keywords='postgresql',
   project_urls={
-    'GitHub': 'https://github.com/byBenPuls/pg_table_builder'
+    'GitHub': 'https://github.com/byBenPuls/table_builder_pg'
   },
   python_requires='>=3.9'
 )
