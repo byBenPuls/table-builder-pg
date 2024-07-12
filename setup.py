@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='pg_table_builder',
-  version='1.0.2',
+  version='1.0.3',
   author='Ben Puls',
   author_email='discordben7@gmail.com',
   description='Table builder for postgresql',
