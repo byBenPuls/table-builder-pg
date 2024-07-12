@@ -12,7 +12,8 @@ class CommonTypes:
                  ) -> None:
         if primary_key and unique:
             raise IncompatibleParameters('PRIMARY KEY and UNIQUE incompatible')
-        self.default = f' default {default_expression}' if default_expression is not None else ''
+        self.default = (' default {}'.format(default_expression.replace("'", "''"))
+                        if default_expression is not None else '')
         self.primary_key = ' PRIMARY KEY' if primary_key else ''
         self.unique = ' UNIQUE' if unique else ''
         self.not_null = ' NOT NULL' if not_null else ''
