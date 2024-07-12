@@ -1,6 +1,6 @@
 # Postgresql Table Builder
  
-### Installation and updating
+### 🌐 Installation and updating
 
 `py -m pip install --upgrade pg_table_builder`
 
