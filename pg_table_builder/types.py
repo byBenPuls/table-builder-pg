@@ -133,4 +133,13 @@ class DoublePrecision(CommonTypes):
         super().__init__(default_expression, primary_key, unique, not_null)
     
     def __str__(self) -> str:
-        return  'double precision{}'.format(super().__str__())
+        return 'double precision{}'.format(super().__str__())
+
+
+class Integer(CommonTypes):
+    def __init__(self, default_expression=None, primary_key=False,
+                 unique=False, not_null=False) -> None:
+        super().__init__(default_expression, primary_key, unique, not_null)
+    
+    def __str__(self) -> str:
+        return 'int{}'.format(super().__str__())

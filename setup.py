@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 def readme():
@@ -7,14 +7,14 @@ def readme():
 
 setup(
   name='pg_table_builder',
-  version='1.0.5',
+  version='1.1.0',
   author='Ben Puls',
   author_email='discordben7@gmail.com',
   description='Table builder for postgresql',
   long_description=readme(),
   long_description_content_type='text/markdown',
   url='https://github.com/byBenPuls/table-builder-pg',
-  packages=find_packages(),
+  packages=['pg_table_builder'],
   install_requires=[],
   classifiers=[
     'Programming Language :: Python :: 3.11',
