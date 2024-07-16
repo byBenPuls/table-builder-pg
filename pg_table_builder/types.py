@@ -125,4 +125,12 @@ class ForeignKey:
         return 'FOREIGN KEY ({}) REFERENCES {} ({})'.format(self.column_name,
                                                             self.ref_table_name,
                                                             self.ref_column_name)
+
+
+class DoublePrecision(CommonTypes):
+    def __init__(self, default_expression=None, primary_key=False,
+                 unique=False, not_null=False) -> None:
+        super().__init__(default_expression, primary_key, unique, not_null)
     
+    def __str__(self) -> str:
+        return  'double precision{}'.format(super().__str__())
